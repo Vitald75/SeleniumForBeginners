@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Debug Suite" verbose="1">
+    <test name="Debug Tests in Chrome">
+        <parameter name="browser" value="Chrome"></parameter>
+
+        <classes>
+            <class name="com.practicetestautomation.tests.exeptions.ExceptionsTests">
+                <methods>
+                    <include name="noSuchElementExceptionTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Positive Login Tests in Fifefox">
+        <parameter name="browser" value="firefox"></parameter>
+
+        <classes>
+            <class name="com.practicetestautomation.tests.exeptions.ExceptionsTests">
+                <methods>
+                    <include name="noSuchElementExceptionTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
